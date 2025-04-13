@@ -1,18 +1,18 @@
-# syntax=docker/dockerfile:1
 FROM n8nio/n8n:latest
 
-# 设置工作目录
 WORKDIR /data
 
-# 设置环境变量（根据需要可改）
+# 复制你刚刚创建的启动脚本进镜像
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD}
 ENV N8N_PORT=5678
-ENV WEBHOOK_URL=https://n8n-on-render.onrender.com
+ENV WEBHOOK_URL=https://n8n-yourname.onrender.com
 
-# 暴露端口
 EXPOSE 5678
 
-# 启动 n8n
-CMD ["n8n"]
+# 改为执行我们自己的脚本
+CMD ["/start.sh"]
