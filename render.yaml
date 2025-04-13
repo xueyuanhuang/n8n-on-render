@@ -4,4 +4,15 @@ services:
     env: docker
     plan: free
     dockerfilePath: Dockerfile
-    healthCheckPath: /
+    healthCheckPath: /healthz
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        sync: false  # 👉 密码从后台设置
+      - key: N8N_PORT
+        value: "5678"
+      - key: WEBHOOK_URL
+        value: https://n8n-xueyuanhuang.onrender.com
