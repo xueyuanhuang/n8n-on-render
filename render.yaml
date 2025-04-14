@@ -8,8 +8,6 @@ services:
     envVars:
       - key: GENERIC_TIMEZONE
         value: Asia/Shanghai
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
       - key: WEBHOOK_URL
         value: https://placeholder.onrender.com
       - key: DB_TYPE
