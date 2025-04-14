@@ -3,16 +3,26 @@ services:
     name: n8n
     env: docker
     plan: free
-    dockerfilePath: Dockerfile
-    healthCheckPath: /healthz
+    repo: https://github.com/xueyuanhuang/n8n-on-render
+    branch: main
+    dockerfilePath: ./Dockerfile
     envVars:
+      - key: GENERIC_TIMEZONE
+        value: Asia/Shanghai
       - key: N8N_BASIC_AUTH_ACTIVE
-        value: "true"
+        value: true
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        sync: false  # 👉 密码从后台设置
-      - key: N8N_PORT
-        value: "5678"
+        value: mysecurepass123
       - key: WEBHOOK_URL
-        value: https://n8n-xueyuanhuang.onrender.com
+        value: https://placeholder.onrender.com
+      - key: DB_TYPE
+        value: sqlite
+      - key: N8N_DISABLE_PRODUCTION_MAIN_PROCESS
+        value: true
+      - key: TELEGRAM_BOT_TOKEN
+        value: ${TELEGRAM_BOT_TOKEN}
+      - key: TELEGRAM_CHAT_ID
+        value: ${TELEGRAM_CHAT_ID}
+
