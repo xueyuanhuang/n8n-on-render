@@ -6,6 +6,8 @@ services:
     branch: main
     dockerfilePath: ./Dockerfile
     envVars:
+      - key: N8N_ENCRYPTION_KEY
+        value: Yv93KJrTPa+E8WljRmfYTe8t5mKqP4bGlZqk5XqgQqU
       - key: GENERIC_TIMEZONE
         value: Asia/Shanghai
       - key: N8N_DISABLE_PRODUCTION_MAIN_PROCESS
