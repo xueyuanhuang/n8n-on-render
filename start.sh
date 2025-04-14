@@ -1,2 +1,3 @@
 #!/bin/sh
-n8n
+echo "N8N STARTING..."
+n8n --version
