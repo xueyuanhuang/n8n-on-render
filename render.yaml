@@ -10,11 +10,19 @@ services:
         value: Asia/Shanghai
       - key: N8N_DISABLE_PRODUCTION_MAIN_PROCESS
         value: true
+        
       - key: DB_TYPE
-        value: sqlite
+        value: postgres
+      - key: DB_POSTGRESDB_HOST
+        value: db.amlywvpvgxiltbreivkq.supabase.co
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_DATABASE
+        value: postgres
+      - key: DB_POSTGRESDB_USER
+        value: postgres
+      - key: DB_POSTGRESDB_PASSWORD
+        
       - key: WEBHOOK_URL
-        value: ${WEBHOOK_URL}
       - key: TELEGRAM_BOT_TOKEN
       - key: TELEGRAM_CHAT_ID
-
-
