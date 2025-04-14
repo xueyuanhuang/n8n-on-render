@@ -14,15 +14,15 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: db.amlywvpvgxiltbreivkq.supabase.co
+        value: aws-0-ap-southeast-1.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
         value: 5432
       - key: DB_POSTGRESDB_DATABASE
-        value: "postgres"
-      - key: DB_POSTGRESDB_USER
         value: postgres
+      - key: DB_POSTGRESDB_USER
+        value: postgres.amlywvpvgxiltbreivkq
       - key: DB_POSTGRESDB_PASSWORD
-        value: Xfp*7$Q!3$Sx$%h
+        value: 7b4LyrXJX9JofkL
         
       - key: WEBHOOK_URL
         value: ${WEBHOOK_URL}
