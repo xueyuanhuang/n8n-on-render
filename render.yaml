@@ -10,10 +10,6 @@ services:
         value: Asia/Shanghai
       - key: N8N_BASIC_AUTH_ACTIVE
         value: true
-      - key: N8N_BASIC_AUTH_USER
-        value: ${N8N_BASIC_AUTH_USER}
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: ${N8N_BASIC_AUTH_PASSWORD}
       - key: WEBHOOK_URL
         value: https://placeholder.onrender.com
       - key: DB_TYPE
