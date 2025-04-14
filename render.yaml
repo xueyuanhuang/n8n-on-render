@@ -16,13 +16,13 @@ services:
       - key: DB_POSTGRESDB_HOST
         value: db.amlywvpvgxiltbreivkq.supabase.co
       - key: DB_POSTGRESDB_PORT
-        value: 5432
+        value: "5432"
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_USER
         value: postgres
       - key: DB_POSTGRESDB_PASSWORD
-        value: Xfp*7$Q!3$Sx$%h
+        value: "Xfp*7$Q!3$Sx$%h"
         
       - key: WEBHOOK_URL
         value: ${WEBHOOK_URL}
