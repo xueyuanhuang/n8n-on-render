@@ -22,7 +22,7 @@ services:
       - key: DB_POSTGRESDB_USER
         value: postgres
       - key: DB_POSTGRESDB_PASSWORD
-        value: ${DB_POSTGRESDB_PASSWORD}
+        value: Xfp*7$Q!3$Sx$%h
         
       - key: WEBHOOK_URL
         value: ${WEBHOOK_URL}
