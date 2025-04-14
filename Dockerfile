@@ -17,5 +17,4 @@ ENV N8N_PORT=5678
 ENV WEBHOOK_URL=https://n8n-yourname.onrender.com
 
 EXPOSE 5678
-# ✅ 更保险的启动方式（用 sh 执行）
-CMD ["sh", "/data/start.sh"]
+CMD ["/data/start.sh"]
