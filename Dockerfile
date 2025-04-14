@@ -2,10 +2,13 @@ FROM n8nio/n8n:latest
 WORKDIR /data
 
 # 保证拷贝成功
-COPY start.sh /data/start.sh
+# COPY start.sh /data/start.sh
 
 # 推荐用 COPY --chmod，一行解决权限问题
-# COPY --chmod=755 start.sh /data/start.sh
+COPY --chmod=755 start.sh /data/start.sh
+
+# ✅ 加一行调试语句：构建日志会打印 /data 里的文件
+RUN echo "✔ Dockerfile 已生效！" && ls -al /data
 
 # 可选：查看文件是否存在
 RUN ls -al /data
