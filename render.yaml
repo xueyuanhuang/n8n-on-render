@@ -8,12 +8,11 @@ services:
     envVars:
       - key: GENERIC_TIMEZONE
         value: Asia/Shanghai
-      - key: WEBHOOK_URL
-        value: https://placeholder.onrender.com
-      - key: DB_TYPE
-        value: sqlite
       - key: N8N_DISABLE_PRODUCTION_MAIN_PROCESS
         value: true
+      - key: DB_TYPE
+        value: sqlite
+      - key: WEBHOOK_URL
       - key: TELEGRAM_BOT_TOKEN
       - key: TELEGRAM_CHAT_ID
 
