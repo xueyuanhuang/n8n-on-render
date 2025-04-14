@@ -12,7 +12,7 @@ services:
         value: true
         
       - key: DB_TYPE
-        value: "postgres"
+        value: "postgresdb"
       - key: DB_POSTGRESDB_HOST
         value: "db.amlywvpvgxiltbreivkq.supabase.co"
       - key: DB_POSTGRESDB_PORT
